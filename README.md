@@ -19,3 +19,6 @@ npm run build
 ```
 npm test
 ```
+
+### Docs for the app
+Open index.html from /docs

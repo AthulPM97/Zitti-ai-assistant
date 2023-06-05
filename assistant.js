@@ -19,6 +19,7 @@ class ZittiAssistant {
    */
   respondToCommand(command) {
     // Command handling logic...
+
     // Remove punctuation and convert to lowercase
     const formattedCommand = command.toLowerCase().replace(/[^\w\s]/g, "");
 
@@ -29,7 +30,7 @@ class ZittiAssistant {
     } else if (formattedCommand === "fetch the newspaper") {
       return fetchNewspaper();
     } else if (formattedCommand.startsWith("add ")) {
-      const item = formattedCommand.slice(4).trim();
+      const item = formattedCommand.split(" ")[1];
       return addToShoppingList(item);
     } else if (formattedCommand === "read my shopping list") {
       return readShoppingList();

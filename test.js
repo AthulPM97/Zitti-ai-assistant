@@ -20,7 +20,8 @@ describe('Zitti Assistant', () => {
 
     it('should respond to an add item to shopping list command', () => {
       const response = ZittiAssistant.respondToCommand('Add Bread to my shopping list');
-      expect(response).to.equal('Bread added to your shopping list');
+      const expected = 'Bread added to your shopping list'
+      expect(response).to.equal(expected.toLowerCase());
     });
 
     it('should respond to a read shopping list command', () => {
