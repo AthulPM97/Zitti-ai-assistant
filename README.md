@@ -1,4 +1,4 @@
-# strique-ui
+# Zitti-ai
 
 ## Project setup
 ```
